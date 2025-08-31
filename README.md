@@ -9,6 +9,8 @@
 <img width="735" height="481" alt="2025-08-31 21-12-02屏幕截图" src="https://github.com/user-attachments/assets/3bc63cf1-a6de-414f-a06c-3a4f2b9bba51" />
 
 ## 项目结构
+⚠️本项目的网页前端部分由Cursor通过自然语言的对话生成。
+
 <img width="526" height="635" alt="image" src="https://github.com/user-attachments/assets/510197aa-5926-48d0-a296-159aabbed845" />
 
 ## 数据集（minecraft-question-answer-700k）
