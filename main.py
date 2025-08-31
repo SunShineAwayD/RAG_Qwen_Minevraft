@@ -1,5 +1,3 @@
-# 导入我们自己创建的模块和配置
-
 import config
 from index_builder import get_or_build_index
 import os
@@ -7,14 +5,12 @@ os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 
 def main():
     print("1")
-    """主函数，运行整个RAG查询流程"""
     print("--- RAG流程开始 ---")
     
     # 第1步：从config.py加载并设置模型
     config.setup_models()
     
     # 第2步：从index_builder.py获取或构建索引
-    # 这个函数会自动处理加载数据、构建和保存/加载索引的逻辑
     index = get_or_build_index(
         data_path=config.JSON_DATA_PATH,
         index_save_path=config.INDEX_SAVE_PATH
