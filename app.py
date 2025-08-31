@@ -7,7 +7,6 @@ import os
 app = Flask(__name__, static_folder='static', template_folder='templates')
 CORS(app)
 
-# 初始化模型和索引
 config.setup_models()
 index = get_or_build_index(
     data_path=config.JSON_DATA_PATH,
@@ -28,10 +27,8 @@ def query():
         return jsonify({'error': '请输入问题'}), 400
     
     try:
-        # 执行查询
         response = query_engine.query(user_query)
         
-        # 准备源数据
         sources = []
         for i, node in enumerate(response.source_nodes):
             sources.append({
