@@ -1,11 +1,8 @@
-# data_loader.py
-
 import json
 from llama_index.core import Document
 from typing import List
 
 def load_minecraft_qa(file_path: str) -> List[Document]:
-    """从指定的JSON文件加载问答数据并转换为Document对象列表"""
     print(f"从 {file_path} 加载数据...")
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
