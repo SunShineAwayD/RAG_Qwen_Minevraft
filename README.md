@@ -1,4 +1,4 @@
-# RAG_Qwen_Minevraft
+# RAG_Qwen_Minecraft
 ## ⚠️因BGE以及QWEN-7B模型较大，而GitHub仅允许25MB以下文件的上传，故暂不上传，若有需要可联系sunjx1009@163.com
 ## 项目概览
   这是一个基于RAG（检索增强生成）技术的Minecraft游戏知识问答系统，使用了Qwen2.5-7B-Instruct大语言模型和BGE嵌入模型，通过Flask提供Web界面。
